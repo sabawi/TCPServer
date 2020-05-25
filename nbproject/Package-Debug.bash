@@ -63,6 +63,10 @@ cd "${TOP}"
 makeDirectory "${NBTMPDIR}//usr/bin"
 copyFileToTmpDir "${OUTPUT_PATH}" "${NBTMPDIR}/${PACKAGE_TOP_DIR}bin/${OUTPUT_BASENAME}" 0755
 
+cd "${TOP}"
+makeDirectory "${NBTMPDIR}//usr/bin"
+copyFileToTmpDir "${OUTPUT_PATH}" "${NBTMPDIR}/${PACKAGE_TOP_DIR}bin/${OUTPUT_BASENAME}" 0755
+
 
 # Ensure proper rpm build environment
 RPMMACROS=~/.rpmmacros
@@ -101,6 +105,7 @@ echo '%description' >> ${SPEC_FILE}
 echo 'Description...' >> ${SPEC_FILE}
 echo  >> ${SPEC_FILE}
 echo '%files' >> ${SPEC_FILE}
+echo \"/${PACKAGE_TOP_DIR}bin/${OUTPUT_BASENAME}\" >> ${SPEC_FILE}
 echo \"/${PACKAGE_TOP_DIR}bin/${OUTPUT_BASENAME}\" >> ${SPEC_FILE}
 echo '%dir' >> ${SPEC_FILE}
 

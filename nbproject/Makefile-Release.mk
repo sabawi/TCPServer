@@ -62,7 +62,7 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/tcpserver: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/tcpserver ${OBJECTFILES} ${LDLIBSOPTIONS} -static -lrt -lcrypto -lpthread -ldl -lz -lboost_system -lboost_filesystem -ldl
 
-${OBJECTDIR}/server2.o: server2.cpp 
+${OBJECTDIR}/server2.o: server2.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -w -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/server2.o server2.cpp
@@ -73,7 +73,6 @@ ${OBJECTDIR}/server2.o: server2.cpp
 # Clean Targets
 .clean-conf: ${CLEAN_SUBPROJECTS}
 	${RM} -r ${CND_BUILDDIR}/${CND_CONF}
-	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/tcpserver
 
 # Subprojects
 .clean-subprojects:
