@@ -120,7 +120,7 @@
           <developmentMode>5</developmentMode>
         </asmTool>
         <linkerTool>
-          <commandLine>-static -lrt -lcrypto -lpthread -ldl -lz -lboost_system -lboost_filesystem -ldl</commandLine>
+          <commandLine>-lrt -lcrypto -lpthread -ldl -lz -lboost_system -lboost_filesystem -ldl</commandLine>
         </linkerTool>
       </compileType>
       <item path="json.hpp" ex="false" tool="3" flavor2="0">
