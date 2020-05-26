@@ -60,7 +60,7 @@ LDLIBSOPTIONS=
 
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/tcpserver: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/tcpserver ${OBJECTFILES} ${LDLIBSOPTIONS} -static -lrt -lcrypto -lpthread -ldl -lz -lboost_system -lboost_filesystem -ldl
+	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/tcpserver ${OBJECTFILES} ${LDLIBSOPTIONS} -lrt -lcrypto -lpthread -ldl -lz -lboost_system -lboost_filesystem -ldl
 
 ${OBJECTDIR}/server2.o: server2.cpp nbproject/Makefile-${CND_CONF}.mk
 	${MKDIR} -p ${OBJECTDIR}

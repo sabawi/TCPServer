@@ -58,7 +58,7 @@
           <warningLevel>0</warningLevel>
         </ccTool>
         <linkerTool>
-          <commandLine>-static -lrt -lcrypto -lpthread -ldl -lz -lboost_system -lboost_filesystem -ldl</commandLine>
+          <commandLine>-lrt -lcrypto -lpthread -ldl -lz -lboost_system -lboost_filesystem -ldl</commandLine>
         </linkerTool>
       </compileType>
       <packaging>
